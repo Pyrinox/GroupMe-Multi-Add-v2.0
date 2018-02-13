@@ -14,16 +14,16 @@ GroupMe-Multi-add bulk adds a list of members from a .csv file to a GroupMe grou
 
 ## Installation
 1. Install Homebrew if you haven’t already. Run the following command in the terminal:
-'/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
-2. Install wget: 'brew install wget'
-3. Download the Miniconda installer. Miniconda is a lightweight python environment, which automatically includes python 3: 'wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh'
-4. Run the Miniconda installer: 'bash Miniconda3-latest-MacOSX-x86_64.sh'
-5. Delete the Miniconda installer: 'rm ~/Miniconda3-latest-MacOSX-x86_64.sh'
-6. Edit PATH variable and store it: 'echo export PATH='~/miniconda3/bin:$PATH' >> ~/.profile'
-7. Activate the changes: 'source ~/.profile'
-8. Install python environment: 'conda install anaconda'
-9. Update python packages: 'conda update --all'
-10. In your terminal, run 'git clone https://github.com/Pyrinox/GroupMe-Multi-Add-v2.0.git' in the directory you would like to keep the script in.
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+2. Install wget: `brew install wget`
+3. Download the Miniconda installer. Miniconda is a lightweight python environment, which automatically includes python 3: `wget https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh`
+4. Run the Miniconda installer: `bash Miniconda3-latest-MacOSX-x86_64.sh`
+5. Delete the Miniconda installer: `rm ~/Miniconda3-latest-MacOSX-x86_64.sh`
+6. Edit PATH variable and store it: `echo export PATH='~/miniconda3/bin:$PATH' >> ~/.profile`
+7. Activate the changes: `source ~/.profile`
+8. Install python environment: `conda install anaconda`
+9. Update python packages: `conda update --all`
+10. In your terminal, run `git clone https://github.com/Pyrinox/GroupMe-Multi-Add-v2.0.git` in the directory you would like to keep the script in.
 
 
 ## Usage
