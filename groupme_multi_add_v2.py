@@ -58,8 +58,8 @@ def add_members(api_url, group_id, access_token, name_of_csv, lines_to_skip):
 
 # RUNS EVERYTHING
 def main():
-    # get user_token info from user
 
+    # get user_token info from user
 	user_token = input("Welcome to the GroupMe-Multi-Add script!\n" +
 	"Please refer to the written documentation for in depth instructions.\n" +
 	"To begin with, please enter your User token: ")
@@ -68,10 +68,9 @@ def main():
 	api_url = "https://api.groupme.com/v3"
 	query = api_url + "/groups?omit='memberships'&token=%s" % user_token
 	r1 = requests.get(query).json()
-
 	list_of_group_names = getListOfGroupNames(r1)
-	# formatted_list_of_group_names = '\n '.join(list_of_group_names)
 	formatted_list_of_group_names = outputFormattedList(list_of_group_names)
+	
 	# choose what group you are targeting
 	group_name = input("Choose the group name from the following list you are targeting:\n" + 
 	 	formatted_list_of_group_names +
