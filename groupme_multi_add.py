@@ -9,7 +9,7 @@ roster = "REPLACE ME"
 LINES_TO_SKIP = 6
 
 # Your access token. See README for details on how to obtain
-ACCESS_TOKEN = "REPLACE ME"
+ACCESS_TOKEN = "9e30ed10de080134bfdb171216a4da97"
 
 # Group Id. See README for details on how to obtain
 GROUP_ID = "REPLACE ME"

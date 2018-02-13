@@ -1,6 +1,8 @@
 # GroupMe-Multi-add
 
-A small Python script I wrote in order to bulk add a list of members from a .csv file to a GroupMe group, because I didn't want to do it manually.
+I'm updating GroupMe-Multi-add (originally written by Yangzi) to accommodate for changes within GroupMe's public facing UI, and make it more intuitve to use.
+
+GroupMe-Multi-add bulk adds a list of members from a .csv file to a GroupMe group.
 
 ## Installation
 
@@ -10,15 +12,15 @@ A small Python script I wrote in order to bulk add a list of members from a .csv
 
 ## Usage
 
-To use this script, you need 2 pieces of information from GroupMe.
+To use this script, you will need to do the following:
 
-1. Group ID. To get this, login to [GroupMe](https://app.groupme.com/) and select the group you want to add members to. Then click the arrow right next to the name of your group, and select settings. Copy your Group ID and replace the current `GROUP_ID` constant (located at the top of the python file) with what you copied.
+1. Create a csv file that contains a single column of phone numbers. Save it in the same directory that the python file is in. 
 
-2. Access Token. To get an access token, go [here](https://dev.groupme.com/applications/new) and fill out the form. You can put whatever you want for the fields, it doesn't really matter, as long as the format matches. Once you check the box and click save, your access token should appear at the bottom of the page as an alphanumeric string. Copy it and replace the current `ACCESS_TOKEN` constant.
+2. Access Token. To get an access token, create a [GroupMe account](https://web.groupme.com/signup). If you already have an account, directly sign into the [developer's portal](https://dev.groupme.com/session/new). Once you're logged in, you should be able to see the "Access Token" button located at the top right of the navigation menu (to the left of your account name). Copy the token.
 
-Once you've gotten the information and editted the corresponding values in the python file, download your roster as a .csv file, and save it in the same directory that the python file is in. Replace the current value of `ROSTER` with the name of your .csv file. Then, count how many rows there are before the first member. Replace the current value of `LINES_TO_SKIP` with that number.
+3. Finally, in your terminal, cd to the directory containing your .csv file and python script. Then type `python groupme_multi_add.py` and press Enter. Follow all the prompts.
 
-Finally, in your terminal, cd to the directory containing your .csv file and python script. Then type `python groupme_multi_add.py` and press Enter, and you're done! Congratulations, you've just added your entire roster to your GroupMe group.
+4. Congratulations, you've just added your entire roster to your GroupMe group.
 
 
 ## API Reference
